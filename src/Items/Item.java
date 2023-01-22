@@ -1,6 +1,6 @@
 package Items;
 
-public class Item {
+public abstract class Item {
     private Coordinate coordinate;
 
     public Item(Coordinate coordinate){
