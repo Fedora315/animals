@@ -6,4 +6,5 @@ public abstract class Killer extends MovableItem{
         super(coordinate,distance);
     }
     public abstract void kill (Item item);
+
 }
