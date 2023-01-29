@@ -1,7 +1,7 @@
 package Items;
 
-public class Fox extends Animal {
-    public Fox (Coordinate coordinate, int distance, int healthLevel, int foodLevel, int recoveryLevel) {
+public class Bear extends Animal{
+    public Bear(Coordinate coordinate, int distance, int healthLevel, int foodLevel, int recoveryLevel) {
         super(coordinate, distance, healthLevel, foodLevel, recoveryLevel);
 
 
@@ -27,3 +27,4 @@ public class Fox extends Animal {
 
     }
 }
+
