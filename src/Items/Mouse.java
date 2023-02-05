@@ -15,12 +15,12 @@ public class Mouse extends Animal {
 
     @Override
     public boolean isAlive() {
-        return false;
+        return  getHealthLevel()>0;
     }
 
     @Override
     public int getFoodLevelIncreasing() {
-        return 0;
+        return 30;
     }
 
     @Override

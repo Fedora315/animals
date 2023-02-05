@@ -9,17 +9,17 @@ public class Rabbit extends Animal{
 
     @Override
     public boolean canEat(Eatable eatable) {
-        return false;
+        return canEat(eatable, Mouse.class);
     }
 
     @Override
     public boolean isAlive() {
-        return false;
+        return  getHealthLevel()>0;
     }
 
     @Override
     public int getFoodLevelIncreasing() {
-        return 0;
+        return 50;
     }
 
     @Override

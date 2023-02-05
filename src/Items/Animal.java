@@ -29,6 +29,17 @@ public abstract class Animal extends Killer implements Eatable {
     }
 
     public abstract boolean canEat(Eatable eatable);
+
+    public boolean canEat(Eatable eatable, Class ... classes){
+        for (int i=0;i<classes.length;i++){
+            if (classes[i] == eatable.getClass()) {
+                return true;
+            }
+        }
+        return false;
+
+    }
+
     @Override
     public void kill(Item item) {
         if (item instanceof Eatable){
@@ -40,5 +51,10 @@ public abstract class Animal extends Killer implements Eatable {
             }
 
         }
+    }
+
+    @Override
+    public void eat() {
+        healthLevel=0;
     }
 }
