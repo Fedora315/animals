@@ -9,22 +9,20 @@ public class Bear extends Animal{
 
     @Override
     public boolean canEat(Eatable eatable) {
-        return false;
+        return canEat(eatable, Fox.class, Mouse.class, Rabbit.class);
     }
 
     @Override
     public boolean isAlive() {
-        return false;
+        return getHealthLevel()>0;
     }
 
     @Override
     public int getFoodLevelIncreasing() {
-        return 0;
+        return 100;
     }
 
-    @Override
-    public void eat() {
 
-    }
+
 }
 
